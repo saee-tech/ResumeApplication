@@ -1,0 +1,228 @@
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>My Home Page</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
+
+<!--        header {-->
+<!--            background-color: #4CAF50;-->
+<!--            color: white;-->
+<!--            padding: 15px 10px;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        nav {-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--            background-color: #333;-->
+<!--        }-->
+
+<!--        nav a {-->
+<!--            color: white;-->
+<!--            padding: 14px 20px;-->
+<!--            text-decoration: none;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        nav a:hover {-->
+<!--            background-color: #ddd;-->
+<!--            color: black;-->
+<!--        }-->
+
+<!--        main {-->
+<!--            padding: 20px;-->
+<!--        }-->
+
+<!--        footer {-->
+<!--            background-color: #333;-->
+<!--            color: white;-->
+<!--            text-align: center;-->
+<!--            padding: 10px;-->
+<!--            position: fixed;-->
+<!--            bottom: 0;-->
+<!--            width: 100%;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <h1>Welcome to My Profile Page</h1>-->
+<!--    <a href="logout"></a>-->
+<!--</header>-->
+<!--<nav>-->
+<!--    <a href="#home">Home</a>-->
+<!--    <a href="#about">About</a>-->
+<!--    <a href="#services">Services</a>-->
+<!--    <a href="#contact">Contact</a>-->
+<!--    <a href="logout">logout</a>-->
+<!--</nav>-->
+<!--<main>-->
+<!--    <h2>About Me</h2>-->
+<!--    <p>This is L.Veerasai </p>-->
+<!--    <h2>Services</h2>-->
+<!--    <p>These are the services I offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque nisl ut sapien interdum, nec ullamcorper velit dapibus. Sed ac vestibulum libero, nec tempor felis.</p>-->
+<!--</main>-->
+<!--<footer>-->
+<!--    <p>Footer Content &copy; 2024</p>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style> body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; } h1, h2, h3 { color: #333; }
+     ul { margin: 0; padding: 0; list-style-type: none; } li { background: #f9f9f9; margin: 5px 0; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-4">
+                <h1>LAKKIREDDYPALLI VEERA SAI</h1>
+                <p>20-1-471/H2C SN COLONY RAYACHOTI CUDDAPA  | 512345</p>
+                <p>SN COLONY RAYACHOTI CUDDAPA, iNDIA</p>
+            </div>
+
+            <hr/>
+
+            <div class="mb-4">
+                <h2 class="text-center">Career Objective</h2>
+                <p>A result-oriented professional with 2.7 years of experience
+                    and working knowledge of DevOps, Automation, CI/CD pipeline,
+                    Infrastructure as Code and Build & Release Management. Hands-on experience in supporting and
+                    automating deployments, leveraging configuration management and DevOps process. Aiming to
+                    leverage my skills to successfully fill the DevOps Engineer role at your company.</p>
+                <!--                <p><strong>Major:</strong> Computer Science</p>-->
+            </div>
+            <div class="mb-4">
+                <h2 class="text-center">Education</h2>
+                <p><strong>Bachelor of Engineering – Civil Engineering (May – 2022) in SITEK Name</strong></p>
+                <!--                <p><strong>Major:</strong> Computer Science</p>-->
+            </div>
+
+            <hr/>
+
+            <div class="mb-4">
+                <h2 class="text-center">Work Experience</h2>
+                <p><strong>WIPRO PRIVATE LIMITED</strong> - Project Engineer</p>
+                <ul>
+                    <li>I Got 5 star rating  </li>
+                    <li>Best employee of the year</li>
+                    <!--                    <li>Responsibility or achievement</li>-->
+                </ul>
+            </div>
+            <hr/>
+            <div class="mb-4">
+                <h2 class="text-center">Roles and Responsibilities</h2>
+                <ul>
+                    <li>Experience in working on AWS and its services like EC2, VPC, AMI, Security Groups, Route Tables, Auto Scaling, ELB, S3, IAM, EKS, etc.</li>
+                    <li>Automated end-to-end CI/CD pipeline using Ansible.</li>
+                    <li>Automated the process of Jenkins Master-slave node configuration using Ansible.</li>
+                    <li>Automated Sensu server-client installation and also checks configuration using Ansible.</li>
+                    <li>Written Ansible custom roles to provision infrastructure and to configure various applications.</li>
+                    <li>Implemented multiple CI (Continuous Integration), CD (Continuous Deployment) and CD (Continuous Delivery) pipelines as part of DevOps role in few projects.</li>
+                    <li>Part of the team and created an internal tool named D-Engine for automated infrastructure creation and orchestration.</li>
+                    <li>Worked with Docker, created Dockerfile and Docker-compose files to containerize CI/CD pipeline, created custom images and pushed them to Docker Hub.</li>
+                    <li>Experience in Cloud Automation using Terraform and sound knowledge on Ansible and basics of Chef.</li>
+                    <li>Worked on Terraform to provision Infrastructure for various clients on AWS cloud.</li>
+                    <li>Used Kubernetes to orchestrate the deployment, scaling, and management of Docker containers. Created and managed Kubernetes clusters like QA, Preprod, and Prod clusters.</li>
+                    <li>Handled both manual and automatic deployments on Kubernetes and ondemand servers.</li>
+                    <li>Upgraded Kubernetes clusters and RBAC roles for restricting user access to Kubernetes.</li>
+                    <li>Worked on ISTIO POC and implemented ISTIO in QA, Preprod, and Prod clusters.</li>
+                    <li>Worked on spot Devops Automation Platform for cost reduction and created spot servers and maintained Kubernetes worker nodes in spot.</li>
+                    <li>Worked on S3 lifecycle policy, VPC migrations, and volume encryptions.</li>
+                    <li>Reduced internal teamwork by automating repetitive tasks.</li>
+                    <li>Have good understanding of Incident, Problem, and Change management with excellent troubleshooting and time management skills. Ability to work independently or as part of a team.</li>
+                    <li>Trained and handled freshers in the team and prepared High-level and Low-level Documents/POCs.</li>
+                </ul>
+            </div>
+            <div class="container py-5">
+                <h2 class="text-center">Technical Skills</h2>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>Linux (RedHat, Ubuntu), Windows</td>
+                    </tr>
+                    <tr>
+                        <td>CI/CD</td>
+                        <td>Jenkins, GitLab</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Services</td>
+                        <td>Amazon Web Services: EC2, S3, ELB, Auto scaling, CloudFront, Elastic Filesystem, ECS, RDS, VPC, ECR, Route 53, CloudWatch, IAM, EKS, Lambda</td>
+                    </tr>
+                    <tr>
+                        <td>Build Tools</td>
+                        <td>Maven</td>
+                    </tr>
+                    <tr>
+                        <td>Application / Web Servers</td>
+                        <td>Apache Tomcat</td>
+                    </tr>
+                    <tr>
+                        <td>Version Control Tools</td>
+                        <td>GIT, Bitbucket, GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>Scripting</td>
+                        <td>Shell Script</td>
+                    </tr>
+                    <tr>
+                        <td>Monitoring Tools</td>
+                        <td>New Relic, CloudWatch, Prometheus</td>
+                    </tr>
+                    <tr>
+                        <td>Containerization</td>
+                        <td>Docker, Kubernetes</td>
+                    </tr>
+                    <tr>
+                        <td>Artifactory</td>
+                        <td>Nexus</td>
+                    </tr>
+                    <tr>
+                        <td>IAC</td>
+                        <td>Terraform, CloudFormation</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <hr/>
+
+            <h3>Company : Wipro Private Limited </h3> <h4>Project: Center of Excellence - DevOps</h4> <p><strong>Role:</strong> DevOps Engineer – COE</p>
+            <p><strong>Duration:</strong> May 2022 – Present </p> <p><strong>Team Size:</strong> 7</p>
+            <p><strong>Tools:</strong> GitHub, Maven, Jenkins, Jfrog, Apache Tomcat, Terraform, AWS, Chef, Ansible, Docker</p>
+            <h3>Responsibilities & Tasks</h3> <ul> <li>Created different CI/CD pipelines and documented its SOPs.</li>
+            <li>Automated Cloud Infrastructure provisioning using Terraform and Ansible.</li>
+            <li>Part of a team which created an internal tool named D-Engine, used for infrastructure orchestration.</li>
+            <li>Built CI/CD pipeline using Jenkins to retrieve code from GitHub, compile the application using Maven, perform tests, and deploy using Tomcat. Also used Jfrog Artifactory to manage artifacts.</li>
+            <li>Automated CI/CD pipeline using Jenkins.</li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
