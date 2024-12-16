@@ -110,6 +110,20 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+    <!-- Release Repository: For stable releases (non-SNAPSHOT versions) -->
+    <repository>
+        <id>Resume</id>
+        <url>http://13.201.198.58:8081/repository/Resume_Snapshot/</url>
+    </repository>
+
+    <!-- Snapshot Repository: For SNAPSHOT versions (in-development versions) -->
+    <snapshotRepository>
+        <id>nexus-snapshots</id>
+        <url>http://13.201.198.58:8081/repository/Resume/</url>
+    </snapshotRepository>
+</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
