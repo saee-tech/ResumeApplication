@@ -165,7 +165,7 @@
 					<toolchains>
 						<jdk>
 							<version>17</version> <!-- Replace with your required Java version -->
-							<vendor>oracle</vendor> <!-- Adjust as needed -->
+							<vendor>openjdk</vendor> <!-- Adjust as needed -->
 						</jdk>
 					</toolchains>
 				</configuration>
