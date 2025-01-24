@@ -96,38 +96,41 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <finalName>maven-web-application</finalName>
-        <plugins>
-            <!-- Maven Compiler Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
+         
+<build>
+    <directory>${project.basedir}/target</directory>
+    <finalName>maven-web-application</finalName>
+    <plugins>
+        <!-- Maven Compiler Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+                <source>${java.version}</source>
+                <target>${java.version}</target>
+            </configuration>
+        </plugin>
 
-            <!-- Maven WAR Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
-            </plugin>
+        <!-- Maven WAR Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version>
+        </plugin>
 
-            <!-- Jetty Maven Plugin (optional, if needed for development) -->
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>11.0.15</version>
-                <configuration>
-                    <webApp>
-                        <contextPath>/</contextPath>
-                    </webApp>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+        <!-- Jetty Maven Plugin (optional, if needed for development) -->
+        <plugin>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+            <version>11.0.15</version>
+            <configuration>
+                <webApp>
+                    <contextPath>/</contextPath>
+                </webApp>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 </project>
