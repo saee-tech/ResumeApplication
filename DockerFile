@@ -1,0 +1,4 @@
+FROM openjdk:17
+Expose 8080
+Add target/Resume-application.jar Resume-application.jar
+ENTRYPOINT ["java","-jar","/Resume-application.jar"]
