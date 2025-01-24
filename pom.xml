@@ -103,6 +103,8 @@
 
     <!-- Build Configuration -->
     <build>
+              <directory>${project.basedir}/target</directory>
+    <finalName>ResumeApplication</finalName>
         <finalName>${artifactId}</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
