@@ -241,7 +241,10 @@
 
 	<build>
 		<directory>${project.basedir}/target</directory>
+<<<<<<< HEAD
+=======
 		<finalName>maven-web-application</finalName>
+>>>>>>> 659ff89d842f815d70c6f3d561144cf6e6d807e3
 		<plugins>
 			<!-- Maven Compiler Plugin -->
 			<plugin>
@@ -273,6 +276,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>Resume-application</finalName>
 	</build>
 >>>>>>> Dev
 
