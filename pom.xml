@@ -101,7 +101,6 @@
 
 	<build>
 		<directory>${project.basedir}/target</directory>
-		<finalName>maven-web-application</finalName>
 		<plugins>
 			<!-- Maven Compiler Plugin -->
 			<plugin>
@@ -133,6 +132,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>Resume-application</finalName>
 	</build>
 
 </project>
