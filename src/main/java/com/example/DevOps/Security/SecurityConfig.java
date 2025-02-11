@@ -61,8 +61,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    @Autowired
-    private final AppUserService appUserService;
+    private final AppUserService appUserService = new AppUserService();
 
 
     @Bean

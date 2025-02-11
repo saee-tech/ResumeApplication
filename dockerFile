@@ -1,4 +1,41 @@
-FROM openjdk:17
-Expose 8080
-Add target/Resume-application.jar Resume-application.jar
-ENTRYPOINT ["java","-jar","/Resume-application.jar"]
+#USe maven image to bulid springboot application
+FROM maven:3.8.4-openjdk-17 AS build
+
+#set working dirctory
+WORKDIR /app
+
+#Copy the pom.xml and install dependency
+COPY pom.xml .
+RUN mvn dependency:resolve
+
+#copy the src code and build the application
+COPY src ./src
+RUN mvn clean package -DskipTests
+
+
+#offical OpenJDK image to run the application
+FROM openjdk:17-jdk-slim
+
+#Set working Dir
+WORKDIR /app
+
+#Copy the build jar to build stage
+COPY --from=build /app/target/maven-web-application.jar .
+
+#Expose
+EXPOSE 9090
+
+
+#ADD target/maven-web-application.jar maven-web-application.jar
+
+#Specify the command to run the application
+ENTRYPOINT ["java","-jar","/app/maven-web-application.jar"]
+
+
+#######
+
+#docker build -t demo-deployment .
+#docker tag demo-deployment manny1625/deployment:latest
+#docker push manny1625/demo-delopyment;latest
+
+#After render need to deploy render
